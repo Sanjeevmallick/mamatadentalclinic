@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#07528f">
+<meta name="description" content="Mamata Dental Clinic - Complete Dental Care for Your Family.">
+<title>Mamata Dental Clinic | Balasore</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="site">
+
+  <!-- HEADER -->
+  <header class="top">
+    <div class="brand">
+      <img src="assets/logo-icon.jpg" alt="Mamata Dental Clinic logo" class="logo">
+      <div class="brand-copy">
+        <h1>MAMATA</h1>
+        <h2>DENTAL CLINIC</h2>
+        <div class="tagline">HEALTHY SMILES <span>|</span> BRIGHTER TOMORROWS</div>
+      </div>
+    </div>
+    <img src="assets/we-care.jpg" alt="We Care for Your Smile" class="wecare">
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-blue">
+      <p class="grow">WE ARE GROWING TO<br>SERVE YOU BETTER!</p>
+      <div class="small-line"></div>
+      <div class="hero-title">MAMATA</div>
+      <div class="hero-title aqua">DENTAL CLINIC</div>
+      <button class="open-pill" onclick="scrollToBranches()">Now Open at Two Locations<br>in Balasore!</button>
+    </div>
+    <div class="hero-photo">
+      <img src="assets/family.jpg" alt="Happy family smiling together">
+    </div>
+  </section>
+
+  <!-- BRANCHES -->
+  <section class="branches">
+    <article class="branch">
+      <div class="pin">●</div>
+      <div class="branch-content">
+        <strong>Branch 1:</strong>
+        <h3>Nua Bazaar</h3>
+        <a class="phone" href="tel:+917608048761">☎ 7608048761,</a>
+        <a class="phone" href="tel:+917608048762">7608048762</a>
+      </div>
+      <a class="map-btn" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Nua+Bazaar+Balasore+Odisha">Open Map</a>
+    </article>
+
+    <article class="branch">
+      <div class="pin">●</div>
+      <div class="branch-content">
+        <strong>Branch 2:</strong>
+        <h3>F.M. Nagar</h3>
+        <a class="phone" href="tel:+917608048761">☎ 7608048761,</a>
+        <a class="phone" href="tel:+917608048762">7608048762</a>
+      </div>
+      <a class="map-btn" target="_blank" href="https://www.google.com/maps/search/?api=1&query=F.M.+Nagar+Balasore+Odisha">Open Map</a>
+    </article>
+  </section>
+
+  <!-- SLOGAN -->
+  <section class="slogan">
+    <div>Complete Dental Care for Your Family.</div>
+    <span></span>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services-wrap">
+    <div class="services-label">OUR SERVICES</div>
+    <div class="services">
+      <button class="service" onclick="showService('General Dentistry','Check-ups, Cleaning')">
+        <img src="assets/service-general.jpg" alt="">
+        <span><b>General Dentistry</b><small>(Check-ups, Cleaning)</small></span>
+      </button>
+      <button class="service" onclick="showService('Orthodontics','Braces, Aligners')">
+        <img src="assets/service-ortho.jpg" alt="">
+        <span><b>Orthodontics</b><small>(Braces, Aligners)</small></span>
+      </button>
+      <button class="service" onclick="showService('Cosmetic Dentistry','Teeth Whitening, Veneers')">
+        <img src="assets/service-cosmetic.jpg" alt="">
+        <span><b>Cosmetic Dentistry</b><small>(Teeth Whitening, Veneers)</small></span>
+      </button>
+      <button class="service" onclick="showService('Pediatric Dentistry','Kids’ Dental Care')">
+        <img src="assets/service-pediatric.jpg" alt="">
+        <span><b>Pediatric Dentistry</b><small>(Kids’ Dental Care)</small></span>
+      </button>
+      <button class="service" onclick="showService('Restorations','Fillings, Crowns, Bridges')">
+        <img src="assets/service-restoration.jpg" alt="">
+        <span><b>Restorations</b><small>(Fillings, Crowns, Bridges)</small></span>
+      </button>
+      <button class="service" onclick="showService('Oral Surgery','Extractions, Implants')">
+        <img src="assets/service-surgery.jpg" alt="">
+        <span><b>Oral Surgery</b><small>(Extractions, Implants)</small></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- FOOTER / CTA -->
+  <section class="cta">
+    <button class="appointment" onclick="openAppointment()">
+      <span class="calendar">✓</span>
+      <span class="book"><small>Book Your Appointment</small><strong>Today</strong></span>
+    </button>
+    <div class="social">
+      <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">f</a>
+      <a href="https://www.instagram.com/MamataDentalClinic" target="_blank" aria-label="Instagram">◎</a>
+      <span>@MamataDentalClinic</span>
+    </div>
+    <div class="bottom-note">⌣ &nbsp; Healthy Teeth&nbsp; • &nbsp;Happy Lives</div>
+  </section>
+
+</main>
+
+<!-- SERVICE MODAL -->
+<div class="modal" id="serviceModal" aria-hidden="true">
+  <div class="modal-box">
+    <button class="close" onclick="closeModal()">×</button>
+    <h2 id="modalTitle"></h2>
+    <p id="modalText"></p>
+    <a class="modal-call" href="tel:+917608048761">Call 7608048761</a>
+  </div>
+</div>
+
+<!-- APPOINTMENT MODAL -->
+<div class="modal" id="appointmentModal" aria-hidden="true">
+  <div class="modal-box appointment-box">
+    <button class="close" onclick="closeAppointment()">×</button>
+    <h2>Book Your Appointment</h2>
+    <p>Fill in your details and send the request on WhatsApp.</p>
+    <form onsubmit="sendWhatsApp(event)">
+      <input id="name" required placeholder="Your Name">
+      <input id="mobile" required type="tel" placeholder="Mobile Number">
+      <select id="branch" required>
+        <option value="">Choose Branch</option>
+        <option>Nua Bazaar</option>
+        <option>F.M. Nagar</option>
+      </select>
+      <input id="date" type="date" required>
+      <textarea id="message" rows="3" placeholder="Preferred time / treatment"></textarea>
+      <button class="send" type="submit">Send on WhatsApp</button>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

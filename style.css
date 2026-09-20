@@ -1,0 +1,153 @@
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#fff;font-family:Arial,Helvetica,sans-serif;color:#074d83}
+button,a{font:inherit}
+.site{width:100%;max-width:1024px;margin:auto;overflow:hidden;background:#fff}
+
+/* HEADER */
+.top{height:240px;display:flex;align-items:center;justify-content:space-between;padding:20px 38px 16px;background:#fff}
+.brand{display:flex;align-items:center;gap:20px;min-width:0}
+.logo{width:190px;height:180px;object-fit:cover}
+.brand-copy{border-left:3px solid #143f70;padding-left:22px}
+.brand-copy h1,.brand-copy h2{font-family:Georgia,"Times New Roman",serif;margin:0;color:#073c72;line-height:.95;letter-spacing:-1px}
+.brand-copy h1{font-size:70px}
+.brand-copy h2{font-size:57px;margin-top:10px}
+.tagline{font-size:17px;letter-spacing:4px;color:#6d7478;margin-top:18px;white-space:nowrap}
+.tagline span{margin:0 10px;color:#aaa}
+.wecare{width:205px;height:190px;object-fit:cover}
+
+/* HERO */
+.hero{height:395px;display:flex;position:relative;overflow:hidden;background:#bdeff7}
+.hero-blue{width:53%;height:100%;background:#07558f;padding:30px 55px;position:relative;z-index:2;clip-path:polygon(0 0,100% 0,75% 100%,0 100%)}
+.grow{margin:0;color:#fff;font-weight:800;font-size:32px;line-height:1.15}
+.small-line{width:165px;height:4px;background:#fff;margin:20px 0 22px}
+.hero-title{font-size:72px;font-weight:900;line-height:.95;color:#fff;letter-spacing:1px}
+.hero-title.aqua{color:#5fe5f6;margin-top:6px}
+.open-pill{margin-top:22px;border:0;background:#ffd438;color:#082e57;font-weight:800;font-size:24px;line-height:1.05;padding:12px 28px;border-radius:30px;text-align:left;cursor:pointer;box-shadow:0 2px 0 rgba(0,0,0,.1)}
+.hero-photo{position:absolute;right:0;top:0;width:57%;height:100%;overflow:hidden;background:linear-gradient(90deg,#77dbe8,#d7fbff)}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center right;mix-blend-mode:multiply;opacity:.98}
+
+/* BRANCHES */
+.branches{display:grid;grid-template-columns:1fr 1fr;gap:20px;padding:25px 38px 10px;background:#fff}
+.branch{min-height:170px;border:3px solid #9bdbe8;border-radius:16px;background:#eaf9fc;position:relative;padding:17px 18px 14px 105px}
+.pin{position:absolute;left:22px;top:20px;width:64px;height:64px;border-radius:50%;background:#0863a7;color:#fff;text-align:center;font-size:0}
+.pin:before{content:"";position:absolute;left:19px;top:11px;width:24px;height:31px;border:8px solid #fff;border-radius:50% 50% 50% 50%;transform:rotate(0deg)}
+.pin:after{content:"";position:absolute;left:29px;top:24px;width:7px;height:7px;border-radius:50%;background:#0863a7}
+.branch-content strong{font-size:25px}
+.branch h3{margin:3px 0 11px;font-size:32px;line-height:1}
+.phone{display:block;text-decoration:none;color:#0b578e;font-weight:700;font-size:18px;line-height:1.35}
+.map-btn{display:inline-block;margin-top:8px;background:#0863a7;color:#fff;text-decoration:none;border-radius:9px;padding:8px 13px;font-size:14px;font-weight:800}
+
+/* SLOGAN */
+.slogan{text-align:center;padding:15px 20px 8px;background:#fff}
+.slogan div{font-family:"Brush Script MT","Segoe Script",cursive;font-size:43px;font-weight:600;color:#07558f}
+.slogan span{display:block;width:205px;height:6px;border-radius:50%;background:#29b8d5;margin:4px auto 0;transform:rotate(-5deg)}
+
+/* SERVICES */
+.services-wrap{margin:20px 38px 35px;border:3px solid #9bdbe8;border-radius:20px;background:#eaf9fc;position:relative;padding:55px 25px 25px}
+.services-label{position:absolute;left:50%;top:-28px;transform:translateX(-50%);background:#075b99;color:#fff;border-radius:32px;padding:12px 55px;font-size:32px;font-weight:900;white-space:nowrap;box-shadow:0 2px 3px #aaa}
+.services{display:grid;grid-template-columns:1fr 1fr;column-gap:45px}
+.service{display:flex;align-items:center;gap:20px;background:none;border:0;border-bottom:2px solid #b8dfe8;padding:16px 8px;text-align:left;color:#0b4f83;cursor:pointer;width:100%}
+.service:nth-last-child(-n+2){border-bottom:0}
+.service img{width:94px;height:94px;border-radius:50%;object-fit:cover;flex:none}
+.service b{display:block;font-size:25px;margin-bottom:7px}
+.service small{font-size:19px;color:#214f72}
+
+/* CTA */
+.cta{min-height:175px;background:#07558f;color:#fff;position:relative;padding:28px 70px 25px;display:flex;align-items:flex-start;gap:20px;overflow:hidden}
+.cta:after{content:"";position:absolute;right:-8%;bottom:-55px;width:120%;height:95px;background:#3dd0e5;border-radius:50% 50% 0 0;transform:rotate(-5deg)}
+.appointment{border:0;background:transparent;color:#fff;display:flex;align-items:center;gap:20px;cursor:pointer;z-index:2;text-align:left}
+.calendar{width:80px;height:80px;border:5px solid #fff;border-radius:12px;display:grid;place-items:center;font-size:58px;font-weight:800}
+.book small{display:block;font-size:22px;font-weight:800}
+.book strong{display:block;color:#ffd438;font-size:62px;line-height:.9}
+.social{margin-left:auto;display:flex;align-items:center;gap:12px;font-size:22px;z-index:2}
+.social a{width:48px;height:48px;border-radius:50%;background:#fff;color:#07558f;display:grid;place-items:center;text-decoration:none;font-weight:900;font-size:32px}
+.bottom-note{position:absolute;right:55px;bottom:20px;z-index:3;font-size:14px}
+
+/* MODALS */
+.modal{display:none;position:fixed;inset:0;background:rgba(0,32,55,.65);z-index:99;align-items:center;justify-content:center;padding:20px}
+.modal.show{display:flex}
+.modal-box{background:#fff;width:min(500px,100%);border-radius:20px;padding:30px;position:relative;box-shadow:0 20px 70px rgba(0,0,0,.3)}
+.modal-box h2{margin:0 0 10px;color:#07558f}
+.modal-box p{color:#345}
+.close{position:absolute;right:14px;top:10px;border:0;background:none;font-size:34px;color:#07558f;cursor:pointer}
+.modal-call,.send{display:block;background:#07558f;color:#fff;border:0;border-radius:10px;padding:13px 18px;text-decoration:none;font-weight:800;text-align:center;margin-top:15px}
+.appointment-box form{display:grid;gap:12px}
+.appointment-box input,.appointment-box select,.appointment-box textarea{width:100%;padding:13px;border:1px solid #9bdbe8;border-radius:10px;font-size:16px}
+.send{cursor:pointer}
+
+/* RESPONSIVE */
+@media(max-width:800px){
+  .top{height:155px;padding:12px 20px;gap:8px}
+  .logo{width:82px;height:82px}
+  .brand{gap:10px}
+  .brand-copy{padding-left:12px;border-left:2px solid #143f70}
+  .brand-copy h1{font-size:43px}
+  .brand-copy h2{font-size:34px;margin-top:5px}
+  .tagline{font-size:8px;letter-spacing:2px;margin-top:9px}
+  .tagline span{margin:0 4px}
+  .wecare{width:105px;height:92px}
+  .hero{height:390px}
+  .hero-blue{padding:48px 48px;width:56%;clip-path:polygon(0 0,100% 0,72% 100%,0 100%)}
+  .grow{font-size:21px}
+  .small-line{width:145px;height:3px;margin:16px 0 20px}
+  .hero-title{font-size:51px}
+  .open-pill{font-size:15px;padding:12px 18px;margin-top:24px}
+  .hero-photo{width:57%}
+  .branches{padding:20px 40px 10px;gap:15px}
+  .branch{padding-left:80px;min-height:150px;border-width:2px}
+  .pin{left:15px;top:30px;width:50px;height:50px}
+  .pin:before{left:15px;top:8px;width:18px;height:24px;border-width:6px}
+  .pin:after{left:22px;top:18px;width:6px;height:6px}
+  .branch-content strong{font-size:17px}
+  .branch h3{font-size:22px}
+  .phone{font-size:14px}
+  .map-btn{font-size:11px;padding:7px 10px}
+  .slogan{padding:14px 10px 8px}
+  .slogan div{font-size:30px}
+  .slogan span{width:145px;height:4px}
+  .services-wrap{margin:18px 38px 28px;padding:42px 20px 12px;border-width:2px}
+  .services-label{font-size:22px;padding:10px 38px;top:-23px}
+  .services{column-gap:20px}
+  .service{gap:12px;padding:13px 4px}
+  .service img{width:62px;height:62px}
+  .service b{font-size:16px;margin-bottom:3px}
+  .service small{font-size:11px}
+  .cta{min-height:130px;padding:18px 48px}
+  .calendar{width:55px;height:55px;border-width:3px;font-size:38px}
+  .appointment{gap:12px}
+  .book small{font-size:14px}
+  .book strong{font-size:44px}
+  .social{display:none}
+  .bottom-note{display:none}
+}
+@media(max-width:520px){
+  .top{height:135px;padding:10px 16px}
+  .logo{width:67px;height:67px}
+  .brand-copy h1{font-size:34px}
+  .brand-copy h2{font-size:27px}
+  .tagline{font-size:6px;letter-spacing:1.4px}
+  .wecare{width:84px;height:76px}
+  .hero{height:365px}
+  .hero-blue{padding:45px 35px;width:58%}
+  .grow{font-size:17px}
+  .hero-title{font-size:43px}
+  .open-pill{font-size:12px}
+  .branches{padding:16px 22px 8px;gap:12px}
+  .branch{padding:14px 10px 12px 61px;min-height:140px}
+  .pin{left:9px;top:28px;width:43px;height:43px}
+  .pin:before{left:13px;top:7px;width:16px;height:21px;border-width:5px}
+  .pin:after{left:19px;top:16px;width:5px;height:5px}
+  .branch h3{font-size:19px}
+  .phone{font-size:11px}
+  .map-btn{font-size:9px;padding:6px 8px}
+  .slogan div{font-size:25px}
+  .services-wrap{margin-left:22px;margin-right:22px;padding-left:10px;padding-right:10px}
+  .services{column-gap:8px}
+  .service{gap:8px}
+  .service img{width:51px;height:51px}
+  .service b{font-size:13px}
+  .service small{font-size:9px}
+  .services-label{font-size:18px;padding:9px 28px}
+  .cta{padding-left:32px}
+}
