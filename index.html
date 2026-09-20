@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#075b91">
+<title>Mamata Dental Clinic</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+<header class="header">
+  <div class="brand"><img src="assets/header-brand.jpg" alt="Mamata Dental Clinic logo and branding"></div>
+  <button class="menu" id="menu" aria-label="Open menu"><span></span><span></span><span></span></button>
+  <nav id="nav">
+    <a href="#home">Home</a><a href="#branches">Branches</a><a href="#services">Services</a><a href="#appointment">Appointment</a><a href="#about">About Us</a>
+  </nav>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="hero-copy">
+    <div class="grow">WE ARE GROWING TO<br>SERVE YOU BETTER!</div>
+    <div class="rule"></div>
+    <div class="hero-name">MAMATA<br><span>DENTAL</span><br><span>CLINIC</span></div>
+    <div class="yellow"></div>
+  </div>
+  <div class="hero-image"><img src="assets/family-photo.jpg" alt="Happy family"></div>
+</section>
+
+<section class="branches" id="branches">
+  <article class="branch">
+    <img class="branch-icon" src="assets/branch-location.png" alt="">
+    <div><div class="label">Branch 1:</div><h2>Nua Bazaar</h2>
+      <a href="tel:+917608048761"><img src="assets/phone.png">7608048761,</a>
+      <a href="tel:+917608048762">7608048762</a>
+      <a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Mamata%20Dental%20Clinic%20Nua%20Bazaar">Open Map</a>
+    </div>
+  </article>
+  <article class="branch">
+    <img class="branch-icon" src="assets/branch-location.png" alt="">
+    <div><div class="label">Branch 2:</div><h2>F.M. Nagar</h2>
+      <a href="tel:+917608048761"><img src="assets/phone.png">7608048761,</a>
+      <a href="tel:+917608048762">7608048762</a>
+      <a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Mamata%20Dental%20Clinic%20F.M.%20Nagar">Open Map</a>
+    </div>
+  </article>
+</section>
+
+<div class="tagline">Complete Dental Care for Your Family.</div>
+
+<section class="services" id="services">
+  <div class="services-title">OUR SERVICES</div>
+  <div class="service-grid">
+    <div class="service"><img src="assets/general-dentistry.png"><div><b>General Dentistry</b><small>(Check-ups, Cleaning)</small></div></div>
+    <div class="service"><img src="assets/orthodontics.png"><div><b>Orthodontics</b><small>(Braces, Aligners)</small></div></div>
+    <div class="service"><img src="assets/cosmetic-dentistry.png"><div><b>Cosmetic Dentistry</b><small>(Teeth Whitening, Veneers)</small></div></div>
+    <div class="service"><img src="assets/pediatric-dentistry.png"><div><b>Pediatric Dentistry</b><small>(Kids’ Dental Care)</small></div></div>
+    <div class="service"><img src="assets/restorations.png"><div><b>Restorations</b><small>(Fillings, Crowns, Bridges)</small></div></div>
+    <div class="service"><img src="assets/oral-surgery.png"><div><b>Oral Surgery</b><small>(Extractions, Implants)</small></div></div>
+  </div>
+</section>
+
+<section class="appointment" id="appointment">
+  <div class="appointment-left">
+    <img src="assets/calendar.png" class="calendar" alt="">
+    <div><b>Book Your Appointment</b><strong>Today</strong><span>Your Smile, Our Priority!</span></div>
+  </div>
+  <button class="book-now" id="bookNow">▣&nbsp; Book Now <em>›</em></button>
+  <div class="socials">
+    <a href="https://www.facebook.com/" target="_blank"><img src="assets/facebook.png" alt="Facebook"></a>
+    <a href="https://www.instagram.com/MamataDentalClinic/" target="_blank"><img src="assets/instagram.png" alt="Instagram"></a>
+    <a href="https://www.youtube.com/" target="_blank"><img src="assets/youtube.png" alt="YouTube"></a>
+    <a href="https://www.instagram.com/MamataDentalClinic/" target="_blank">@MamataDentalClinic</a>
+  </div>
+  <div class="wave a"></div><div class="wave b"></div>
+  <small class="motto">Healthy Teeth&nbsp; • &nbsp;Happy Lives</small>
+</section>
+
+<section class="about" id="about">
+  <h2>About Us</h2><div class="about-line"></div>
+  <p>At Mamata Dental Clinic, we are committed to providing gentle,<br class="wide"> high-quality and affordable dental care for the entire family.<br class="wide"> Your smile is our motivation.</p>
+</section>
+</main>
+</div>
+
+<div class="modal" id="modal">
+ <div class="modal-card">
+  <button class="close" id="close">×</button>
+  <h2>Book Your Appointment</h2>
+  <p>Fill in your details and send the appointment request on WhatsApp.</p>
+  <form id="form">
+   <label>Name<input id="name" required placeholder="Your name"></label>
+   <label>Mobile<input id="phone" required type="tel" pattern="[0-9]{10}" placeholder="10-digit mobile number"></label>
+   <label>Branch<select id="branch"><option>Nua Bazaar</option><option>F.M. Nagar</option></select></label>
+   <label>Date<input id="date" required type="date"></label>
+   <label>Time<input id="time" required type="time"></label>
+   <label>Service<select id="service"><option>General Dentistry</option><option>Orthodontics</option><option>Cosmetic Dentistry</option><option>Pediatric Dentistry</option><option>Restorations</option><option>Oral Surgery</option></select></label>
+   <button class="submit">Send Appointment Request</button>
+  </form>
+  <p class="call">Or call <a href="tel:+917608048761">7608048761</a></p>
+ </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
