@@ -25,15 +25,7 @@ button,a{font:inherit}
 .hero-title.aqua{color:#5fe5f6;margin-top:6px}
 .open-pill{margin-top:22px;border:0;background:#ffd438;color:#082e57;font-weight:800;font-size:24px;line-height:1.05;padding:12px 28px;border-radius:30px;text-align:left;cursor:pointer;box-shadow:0 2px 0 rgba(0,0,0,.1)}
 .hero-photo{position:absolute;right:0;top:0;width:57%;height:100%;overflow:hidden;background:linear-gradient(90deg,#77dbe8,#d7fbff)}
-
-.hero-photo img{
-width:100%;
-height:100%;
-object-fit:cover;
-object-position:center right;
-mix-blend-mode:normal;
-opacity:1;
-}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center right;mix-blend-mode:normal;opacity:1;}
 /* BRANCHES */
 .branches{display:grid;grid-template-columns:1fr 1fr;gap:20px;padding:25px 38px 10px;background:#fff}
 .branch{min-height:170px;border:3px solid #9bdbe8;border-radius:16px;background:#eaf9fc;position:relative;padding:17px 18px 14px 105px}
