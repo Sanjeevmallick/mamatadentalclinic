@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mamta Dental Clinic</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;background:#fff;color:#064b82;font-family:Arial,Helvetica,sans-serif}
+body{overflow-x:hidden}
+.page{width:100%;max-width:1100px;margin:auto;background:#fff}
+.hero{position:relative;overflow:hidden;min-height:650px;background:#fff}
+.hero:after{content:"";position:absolute;left:-5%;right:-5%;bottom:-120px;height:250px;background:#fff;clip-path:ellipse(72% 48% at 50% 50%)}
+.hero-top{height:245px;background:#fff;display:flex;align-items:flex-start;justify-content:space-between;padding:22px 34px 0;position:relative;z-index:2}
+.logo{width:68%;max-width:700px;height:auto;object-fit:contain;object-position:left top}
+.slogan{width:19%;max-width:190px;height:auto;object-fit:contain}
+.hero-main{position:relative;z-index:1;min-height:410px;background:linear-gradient(90deg,#07508b 0%,#07508b 48%,#168db6 78%,#eafaff 100%);padding:28px 55px 100px;overflow:hidden}
+.hero-main:before{content:"";position:absolute;inset:0;background:linear-gradient(105deg,rgba(0,60,115,.25),transparent 58%);pointer-events:none}
+.hero-copy{position:relative;z-index:3;width:49%;color:#fff}
+.grow{font-size:28px;font-weight:800;line-height:1.05;margin:0 0 25px}
+.grow:after{content:"";display:block;width:145px;height:4px;background:#fff;margin-top:15px}
+.title{font-size:74px;line-height:.88;margin:0;font-weight:900;letter-spacing:-2px}
+.title span{color:#67d9e8}
+.yellow{display:inline-block;background:#ffd83f;color:#073e69;font-size:24px;font-weight:900;padding:13px 22px;border-radius:22px;margin-top:25px}
+.family{position:absolute;z-index:2;right:-15px;top:-10px;width:55%;height:470px;object-fit:cover;object-position:center top;border-radius:0 0 0 120px;filter:saturate(.95)}
+.family-shade{position:absolute;z-index:2;right:0;top:0;width:57%;height:470px;background:linear-gradient(90deg,rgba(7,80,139,1),rgba(7,80,139,0) 35%);pointer-events:none}
+.locations{padding:40px 38px 35px;background:#e8f8fc}
+.loc-title{text-align:center;font-size:43px;font-weight:900;margin:0 0 25px}
+.loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.loc-card{background:#e8f8fc;border:3px solid #58b7d0;border-radius:20px;padding:22px 30px;display:grid;grid-template-columns:75px 1fr;align-items:center}
+.pin,.phone{width:62px;height:62px;border-radius:50%;background:#1679b1;color:white;display:grid;place-items:center;font-size:30px;font-weight:900}
+.loc-card h3{font-size:30px;margin:0 0 5px}.loc-card p{margin:4px 0;font-size:22px;font-weight:700}
+.family-line{text-align:center;font-family:cursive;font-size:38px;color:#07508b;font-weight:700;padding:40px 15px 18px}
+.family-line:after{content:"";display:block;width:220px;height:5px;background:#35b7cf;margin:8px auto 0;transform:skew(-25deg)}
+.services{padding:0 38px 55px;background:#e8f8fc}
+.services-title{display:table;margin:0 auto 28px;background:#07508b;color:#fff;padding:13px 50px;border-radius:28px;font-size:32px}
+.service-box{border:3px solid #65c1d4;border-radius:25px;padding:30px 28px;display:grid;grid-template-columns:1fr 1fr;gap:28px;background:#effcff}
+.service{display:grid;grid-template-columns:78px 1fr;align-items:center;border-bottom:1px solid #80c8d7;padding:8px 0 18px}
+.icon{width:65px;height:65px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:29px}
+.i1{background:#1998c2}.i2{background:#0fa9aa}.i3{background:#7752bb}.i4{background:#e85b78}.i5{background:#6a4db0}.i6{background:#064e91}
+.service h3{margin:0;font-size:25px}.service p{margin:5px 0 0;font-size:17px;color:#345b73}
+.cta{background:linear-gradient(175deg,#07508b,#043b6a);color:#fff;padding:35px 40px 45px;position:relative;overflow:hidden}
+.cta:after{content:"";position:absolute;left:-5%;right:-5%;bottom:-85px;height:130px;background:#168db6;transform:rotate(-3deg)}
+.cta-grid{position:relative;z-index:2;display:flex;align-items:center;gap:30px}
+.check{font-size:70px}.cta h2{font-size:36px;margin:0}.cta h2 span{display:block;color:#ffd83f;font-size:60px}.social{margin-left:auto;font-size:20px;font-weight:700}
+@media(max-width:800px){
+ .hero{min-height:690px}.hero-top{height:155px;padding:12px 18px}.logo{width:72%}.slogan{width:23%}
+ .hero-main{min-height:535px;padding:25px 24px 80px}.hero-copy{width:100%}
+ .grow{font-size:20px;margin-bottom:18px}.title{font-size:53px}
+ .yellow{font-size:17px;margin-top:18px}
+ .family{top:215px;right:-8%;width:72%;height:300px;border-radius:0 0 0 75px;opacity:.95}
+ .family-shade{top:210px;width:78%;height:310px;background:linear-gradient(90deg,#07508b,rgba(7,80,139,0) 65%)}
+ .locations{padding:30px 18px}.loc-title{font-size:30px}.loc-grid{grid-template-columns:1fr}
+ .loc-card{grid-template-columns:58px 1fr;padding:16px}.pin,.phone{width:50px;height:50px;font-size:23px}
+ .loc-card h3{font-size:22px}.loc-card p{font-size:16px}
+ .family-line{font-size:27px;padding:30px 12px 15px}.services{padding:0 18px 35px}
+ .services-title{font-size:23px;padding:10px 34px}.service-box{grid-template-columns:1fr;padding:18px;gap:10px}
+ .service{grid-template-columns:62px 1fr}.icon{width:52px;height:52px;font-size:22px}.service h3{font-size:19px}.service p{font-size:14px}
+ .cta{padding:28px 20px 45px}.cta-grid{display:block;text-align:center}.check{font-size:45px}.cta h2{font-size:25px}.cta h2 span{font-size:45px}.social{margin:18px 0 0}
+}
+</style>
+</head>
+<body>
+<div class="page">
+<section class="hero">
+  <div class="hero-top">
+    <img class="logo" src="logo.png" alt="Mamta Dental Clinic logo">
+    <img class="slogan" src="smile-slogan.png" alt="We Care for Your Smile">
+  </div>
+  <div class="hero-main">
+    <div class="hero-copy">
+      <p class="grow">WE ARE GROWING TO<br>SERVE YOU BETTER!</p>
+      <h1 class="title">MAMATA<br><span>DENTAL CLINIC</span></h1>
+      <div class="yellow">Now Open at Two Locations<br>in Balasore!</div>
+    </div>
+    <img class="family" src="family-photo.png" alt="Family at Mamta Dental Clinic">
+    <div class="family-shade"></div>
+  </div>
+</section>
+
+<section class="locations">
+  <h2 class="loc-title">Our Locations</h2>
+  <div class="loc-grid">
+    <div class="loc-card"><div class="pin">●</div><div><h3>Branch 1: Nua Bazaar</h3><p>☎ 7608048761, 7608048762</p></div></div>
+    <div class="loc-card"><div class="pin">●</div><div><h3>Branch 2: F.M. Nagar</h3><p>☎ 7608048761, 7608048762</p></div></div>
+  </div>
+</section>
+
+<div class="family-line">Complete Dental Care for Your Family.</div>
+
+<section class="services">
+  <h2 class="services-title">OUR SERVICES</h2>
+  <div class="service-box">
+    <div class="service"><div class="icon i1">🦷</div><div><h3>General Dentistry</h3><p>(Check-ups, Cleaning)</p></div></div>
+    <div class="service"><div class="icon i2">▣</div><div><h3>Orthodontics</h3><p>(Braces, Aligners)</p></div></div>
+    <div class="service"><div class="icon i2">✦</div><div><h3>Cosmetic Dentistry</h3><p>(Teeth Whitening, Veneers)</p></div></div>
+    <div class="service"><div class="icon i4">☺</div><div><h3>Pediatric Dentistry</h3><p>(Kids' Dental Care)</p></div></div>
+    <div class="service"><div class="icon i3">●</div><div><h3>Restorations</h3><p>(Fillings, Crowns, Bridges)</p></div></div>
+    <div class="service"><div class="icon i6">▾</div><div><h3>Oral Surgery</h3><p>(Extractions, Implants)</p></div></div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="cta-grid">
+    <div class="check">☑</div>
+    <div><h2>Book Your Appointment</h2><h2><span>Today</span></h2></div>
+    <div class="social">f&nbsp;&nbsp;◎&nbsp;&nbsp; @MamataDentalClinic<br><small>Healthy Teeth • Happy Lives</small></div>
+  </div>
+</section>
+</div>
+</body>
+</html>
